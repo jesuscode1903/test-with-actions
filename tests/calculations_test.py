@@ -34,6 +34,16 @@ def test_area_of_circle_zero_radius():
     assert result == 0
 
 
+def test_area_ofcircle_negarive_radius():
+    radius = -2
+    
+    # Act
+    result = area_of_circle(radius)
+
+    # Assert
+    assert abs(result - 3.14159) < 1e-5
+
+
 def test_get_nth_fibonacci_zero():
     """Test with n=0."""
     # Arrange
